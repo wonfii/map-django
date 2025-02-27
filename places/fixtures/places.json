@@ -1,0 +1,48 @@
+[
+    {
+        "model": "places.Place",
+        "fields": {
+            "name": "Bona Castle Hill",
+            "latitude": 50.09463117942784,
+            "longitude": 25.73092839834604,
+            "location": "City of Kremenets"
+        }
+    },
+    {
+        "model": "places.Place",
+        "fields": {
+            "name": "PARK3020",
+            "latitude": 49.650177299977756,
+            "longitude": 24.350784003012006,
+            "location": "Village of Strilky"
+        }
+    },
+    {
+        "model": "places.Place",
+        "fields": {
+            "name": "Lake Dogyaska",
+            "latitude": 48.26993148575498,
+            "longitude": 24.165243636621,
+            "location": "Zakarpattia Oblast"
+        }
+    },
+    {
+        "model": "places.Place",
+        "fields": {
+            "name": "Von Meck Manor",
+            "latitude": 50.409612,
+            "longitude": 29.889733,
+            "location": "Village of Kopyliv"
+        }
+    },
+    {
+        "model": "places.Place",
+        "fields": {
+            "name": "Naryshkin-Shuvalov Hunting Palace",
+            "latitude": 48.872542,
+            "longitude": 30.697448,
+            "location": "City of Talne"
+        }
+    }
+]
+

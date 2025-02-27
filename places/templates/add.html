@@ -1,0 +1,44 @@
+{% extends 'create.html' %} 
+
+{% block content %}
+<div class="container mt-5">
+    <div style="display: flex; align-items: center; margin-bottom: 20px">
+        <a class="btn btn-outline-dark" href="/" style="margin-right: 10px;">
+            <i class="bi bi-box-arrow-left"></i>
+        </a>
+        <h1 style="margin: 0;">Add Place</h1>
+    </div>
+
+    <form method="post">
+        {% csrf_token %}
+        
+        <div class="mb-3">
+            <label for="id_name" class="form-label">Name</label>
+            {{ form.name }}
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="id_latitude" class="form-label">Latitude</label>
+                <input type="text" id="id_latitude" name="latitude" class="form-control" 
+                       value="{{ form.latitude.value|default:lat }}" readonly>
+            </div>
+            <div class="col">
+                <label for="id_longitude" class="form-label">Longitude</label>
+                <input type="text" id="id_longitude" name="longitude" class="form-control" 
+                       value="{{ form.longitude.value|default:lng }}" readonly>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="id_location" class="form-label">Location</label>
+            {{ form.location }}
+        </div>
+
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button type="submit" class="btn btn-outline-success">Add</button>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

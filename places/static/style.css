@@ -1,0 +1,25 @@
+.floating-btn {
+    position: fixed; 
+    bottom: 30px;
+    right: 20px; 
+    z-index: 9999;
+}
+
+.floating-btn .btn {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    background-color: white; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.floating-btn .btn i {
+    color: green; 
+    font-size: 24px; 
+}
+
+.floating-btn .btn:hover {
+    background-color: #f0f0f0; 
+}
